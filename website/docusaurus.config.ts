@@ -63,13 +63,14 @@ const config: Config = {
       defaultMode: 'dark',
       respectPrefersColorScheme: true,
     },
-    image: 'img/docs-social-card.jpg',
+    image: 'img/osrs-bots-logo.jpg',
     navbar: {
-      title: 'docs',
+      title: 'osrs-bots',
       hideOnScroll: true,
       logo: {
         alt: 'Test Tube Emoji',
-        src: 'img/test-tube.png',
+        src: 'img/osrs-bots-logo.jpg',
+        className: 'favicon-logo'
       },
       items: [
       ],
