@@ -141,3 +141,7 @@ button[class="searchClearButton_node_modules-@easyops-cn-docusaurus-search-local
 .textWithTrailingIcon img {
   width: 24px;
 }
+
+.favicon-logo {
+  border-radius: 25px;
+}
