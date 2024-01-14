@@ -1,7 +1,7 @@
 {
-    "name": "docs",
-    "private": true,
-    "workspaces": [
-      "website"
-    ]
-  }
+  "name": "docs",
+  "private": true,
+  "workspaces": [
+    "website"
+  ]
+}
