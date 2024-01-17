@@ -4,6 +4,7 @@ import useBaseUrl from '@docusaurus/useBaseUrl';
 import { 
   Box,
   Button,
+  Link,
   Typography
 } from '@mui/material';
 
@@ -29,8 +30,12 @@ function HomepageMessage() {
         className='site-learn-more-button'
         mt={'32px'}
         mb={'20px'}>
-        <Button variant='outlined'>
-          Learn More
+        <Button 
+          component={Link}
+          target='_blank'
+          variant='outlined' 
+          href='https://github.com/osrs-bots/osrs-python-bot?tab=readme-ov-file#osrs-python-bot'>
+            Learn More
         </Button>
       </Box>
     </Box>
