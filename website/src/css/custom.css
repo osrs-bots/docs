@@ -144,4 +144,63 @@ button[class="searchClearButton_node_modules-@easyops-cn-docusaurus-search-local
   border-radius: 25px;
 }
 
-/* TODO Media queries to size the logo correctly */
+.site-tag-line {
+  margin-top: '18px' !important;
+}
+
+/* Smartphones (portrait) ----------- */
+@media only screen 
+and (min-width : 420px) {
+  .site-title {
+    font-size: 18px !important;
+  }
+  .site-tag-line {
+    font-size: 12px !important;
+  }
+}
+
+/* iPads (portrait) ----------- */
+@media only screen 
+and (min-width : 568px) {
+  .site-title {
+    font-size: 30px !important;
+  }
+  .site-tag-line {
+    font-size: 20px !important;
+    padding-left: 3px !important;
+  }
+  .site-learn-more-button {
+    padding-left: 3px !important;
+  }
+}
+
+/* Desktops and laptops ----------- */
+@media only screen 
+and (min-width : 1224px) {
+  .site-title {
+    font-size: 48px !important;
+  }
+  .site-tag-line {
+    font-size: 24px !important;
+    padding-left: 6px !important;
+  }
+  .site-learn-more-button {
+    padding-left: 6px !important;
+  }
+}
+
+/* Large screens ----------- */
+@media only screen 
+and (min-width : 1824px) {
+  .site-title {
+    font-size: 48px !important;
+    padding-left: 5px;
+  }
+  .site-tag-line {
+    font-size: 24px !important;
+    padding-left: 6px !important;
+  }
+  .site-learn-more-button {
+    padding-left: 6px !important;
+  }
+}

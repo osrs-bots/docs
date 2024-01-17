@@ -15,22 +15,21 @@ function HomepageMessage() {
       textAlign={'left'}
     >
       <Typography
+        className='site-title'
         mt={'30px'}
-        fontSize={48}
         fontWeight={700}>
         OSRS Bots 🪄
       </Typography>
       <Typography
-        mt={'5px'}
-        pl={'5px'}
-        fontSize={24}
+        className='site-tag-line'
         fontWeight={500}>
         Automate Old School Runescape Tasks
       </Typography>
       <Box
-        pl={'5px'}
-        mt={'32px'}>
-        <Button variant='outlined' size='large'>
+        className='site-learn-more-button'
+        mt={'32px'}
+        mb={'20px'}>
+        <Button variant='outlined'>
           Learn More
         </Button>
       </Box>
@@ -44,7 +43,7 @@ export default function Home(): JSX.Element {
       <main>
         <Box
           height='calc(100vh - 153px)'
-          pt='7%'
+          pt='3%'
         >
           <Box
             textAlign={'center'}>
@@ -52,6 +51,7 @@ export default function Home(): JSX.Element {
                 component={'img'}
                 alt={'osrs bots logo'}
                 width={'50%'}
+                borderRadius={'1%'}
                 src={useBaseUrl('/img/osrs-bots-logo.jpg')}
               />
               <HomepageMessage />
