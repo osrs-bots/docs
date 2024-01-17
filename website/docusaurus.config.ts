@@ -64,9 +64,19 @@ const config: Config = {
     },
     image: 'img/osrs-bots-logo.jpg',
     navbar: {
-      title: 'OSRS Bots',
       hideOnScroll: true,
       items: [
+        {
+          to: '/docs/',
+          position: 'left',
+          className: 'header-home-link',
+        },
+        {
+          href: 'https://github.com/osrs-bots/',
+          className: 'header-github-link',
+          'aria-label': 'GitHub Repository',
+          position: 'left',
+        },
       ],
     },
     footer: {
