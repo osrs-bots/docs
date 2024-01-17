@@ -145,3 +145,10 @@ button[class="searchClearButton_node_modules-@easyops-cn-docusaurus-search-local
 .favicon-logo {
   border-radius: 25px;
 }
+
+/* TODO Media queries to size the logo correctly */
+.homepage-osrs-bots-logo {
+  height: 350px;
+  width: 350px;
+  border-radius: 20px;
+}
