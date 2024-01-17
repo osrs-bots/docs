@@ -11,14 +11,12 @@ import {
 function HomepageMessage() {
   return (
     <Box
-      width={'50%'}
-      ml={'25%'}
+      className='site-container'
       textAlign={'left'}
     >
       <Typography
         className='site-title'
-        mt={'30px'}
-        fontWeight={700}>
+        mt={'15px'}>
         OSRS Bots 🪄
       </Typography>
       <Typography
@@ -47,16 +45,14 @@ export default function Home(): JSX.Element {
     <Layout>
       <main>
         <Box
-          height='calc(100vh - 153px)'
-          pt='3%'
+          className={'site-home-container'}
         >
           <Box
             textAlign={'center'}>
               <Box
+                className={'site-logo'}
                 component={'img'}
                 alt={'osrs bots logo'}
-                width={'50%'}
-                borderRadius={'1%'}
                 src={useBaseUrl('/img/osrs-bots-logo.jpg')}
               />
               <HomepageMessage />
