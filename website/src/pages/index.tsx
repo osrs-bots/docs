@@ -1,38 +1,70 @@
-import Link from '@docusaurus/Link';
-import useBaseUrl from '@docusaurus/useBaseUrl';
-import useDocusaurusContext from '@docusaurus/useDocusaurusContext';
 import Layout from '@theme/Layout';
-import HomepageFeatures from '@site/src/components/HomepageFeatures';
-import Heading from '@theme/Heading';
-
-import styles from './index.module.css';
 import React from 'react';
+import useBaseUrl from '@docusaurus/useBaseUrl';
+import { 
+  Box,
+  Button,
+  Grid,
+  Typography
+} from '@mui/material';
 
-function HomepageHeader() {
-  const {siteConfig} = useDocusaurusContext();
+function HomepageMessage() {
   return (
-    <header className={styles.heroBanner}>
-      <div className="container">
-        <Heading as="h1" className="hero__title">
-          <code>[{siteConfig.title}]</code>
-        </Heading>
-        <p className="hero__subtitle">{siteConfig.tagline}</p>
-        <div className='textWithTrailingIcon'>
-          <p>built with <Link to='https://bun.sh'>bun</Link></p>
-          <img src={useBaseUrl('img/bun.svg')}/>
-        </div>
-      </div>
-    </header>
+    <Box
+      sx={{
+        height: '350px', // need to match this hegith to the class to match image
+      }}
+    >
+      <Typography
+        mt={2}
+        fontSize={45}
+        fontWeight='700'>
+        OSRS Bots 🪄
+      </Typography>
+      <Typography
+        mt={3}
+        fontSize={20}
+        fontWeight='500'>
+        Automate Old School Runescape Tasks
+      </Typography>
+      <Box
+        mt={5}>
+        <Button variant='contained'>
+          Learn More
+        </Button>
+      </Box>
+    </Box>
   );
 }
 
 export default function Home(): JSX.Element {
   return (
-    <Layout
-      description="data creation, connection & execution coordination utility">
-      <HomepageHeader />
+    <Layout>
       <main>
-        <HomepageFeatures />
+        <Grid 
+          container
+          direction="row"
+          height='calc(100vh - 153px)'
+          pt='280px'
+        >
+          <Grid 
+            item 
+            md={5}
+            textAlign='right'>
+              <Box
+                component='img'
+                alt='osrs bots logo'
+                className='homepage-osrs-bots-logo'
+                src={useBaseUrl('/img/osrs-bots-logo.jpg')}
+              />
+          </Grid>
+          <Grid 
+            item 
+            md={7}
+            pl='75px'>
+              <HomepageMessage />
+          </Grid>
+        </Grid>
       </main>
     </Layout>
   );

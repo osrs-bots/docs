@@ -4,8 +4,7 @@ import type * as Preset from '@docusaurus/preset-classic';
 
 const config: Config = {
   title: 'docs',
-  tagline: 'osrs-bots/osrs-python-bot',
-  favicon: 'img/test-tube.png',
+  favicon: 'img/osrs-bots-logo.jpg',
 
   // Set the production url of your site here
   url: 'https://osrs-bots.github.io',
@@ -65,13 +64,8 @@ const config: Config = {
     },
     image: 'img/osrs-bots-logo.jpg',
     navbar: {
-      title: 'osrs-bots',
+      title: 'OSRS Bots',
       hideOnScroll: true,
-      logo: {
-        alt: 'Test Tube Emoji',
-        src: 'img/osrs-bots-logo.jpg',
-        className: 'favicon-logo'
-      },
       items: [
       ],
     },
