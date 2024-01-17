@@ -79,13 +79,6 @@ const config: Config = {
         },
       ],
     },
-    footer: {
-      copyright: `<html>
-        <div class='textWithTrailingIcon'>
-          <p>docs built with <a href='https://docusaurus.io/'>docusaurus</a></p>
-        </div>
-      </html>`,
-    },
     prism: {
       theme: prismThemes.github,
       darkTheme: prismThemes.dracula,
