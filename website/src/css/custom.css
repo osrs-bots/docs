@@ -144,6 +144,25 @@ button[class="searchClearButton_node_modules-@easyops-cn-docusaurus-search-local
   border-radius: 25px;
 }
 
+.site-container {
+  width: 50%;
+  margin-left: 25%;
+}
+
+.site-home-container {
+  padding-top: 10%;
+}
+
+.site-logo {
+  width: 50%;
+  border-radius: 2%;
+}
+
+.site-title {
+  margin-top: '30px' !important;
+  font-weight: 700 !important;
+}
+
 .site-tag-line {
   margin-top: '18px' !important;
 }
@@ -152,16 +171,30 @@ button[class="searchClearButton_node_modules-@easyops-cn-docusaurus-search-local
 @media only screen 
 and (min-width : 420px) {
   .site-title {
-    font-size: 18px !important;
+    margin-top: '25px' !important;
+    font-size: 24px !important;
   }
   .site-tag-line {
-    font-size: 12px !important;
+    font-size: 15px !important;
+  }
+  .site-home-container {
+    padding-top: 20%;
+  }
+  .site-container {
+    width: 90%;
+    margin-left: 5%;
+  }
+  .site-logo {
+    width: 90%;
+  }
+  .site-home-container {
+    padding-top: 10%;
   }
 }
 
 /* iPads (portrait) ----------- */
 @media only screen 
-and (min-width : 568px) {
+and (min-width : 768px) {
   .site-title {
     font-size: 30px !important;
   }
@@ -171,6 +204,16 @@ and (min-width : 568px) {
   }
   .site-learn-more-button {
     padding-left: 3px !important;
+  }
+  .site-home-container {
+    padding-top: 5%;
+  }
+  .site-container {
+    width: 75%;
+    margin-left: 12.5%;
+  }
+  .site-logo {
+    width: 75%;
   }
 }
 
@@ -187,11 +230,21 @@ and (min-width : 1224px) {
   .site-learn-more-button {
     padding-left: 6px !important;
   }
+  .site-home-container {
+    padding-top: 1%;
+  }
+  .site-container {
+    width: 60%;
+    margin-left: 20%;
+  }
+  .site-logo {
+    width: 60%;
+  }
 }
 
 /* Large screens ----------- */
 @media only screen 
-and (min-width : 1824px) {
+and (min-width : 1600px) {
   .site-title {
     font-size: 48px !important;
     padding-left: 5px;
@@ -202,5 +255,15 @@ and (min-width : 1824px) {
   }
   .site-learn-more-button {
     padding-left: 6px !important;
+  }
+  .site-home-container {
+    padding-top: 10px;
+  }
+  .site-container {
+    width: 40%;
+    margin-left: 30%;
+  }
+  .site-logo {
+    width: 40%;
   }
 }
