@@ -4,32 +4,33 @@ import useBaseUrl from '@docusaurus/useBaseUrl';
 import { 
   Box,
   Button,
-  Grid,
   Typography
 } from '@mui/material';
 
 function HomepageMessage() {
   return (
     <Box
-      sx={{
-        height: '350px', // need to match this hegith to the class to match image
-      }}
+      width={'50%'}
+      ml={'25%'}
+      textAlign={'left'}
     >
       <Typography
-        mt={2}
-        fontSize={45}
-        fontWeight='700'>
+        mt={'30px'}
+        fontSize={48}
+        fontWeight={700}>
         OSRS Bots 🪄
       </Typography>
       <Typography
-        mt={3}
-        fontSize={20}
-        fontWeight='500'>
+        mt={'5px'}
+        pl={'5px'}
+        fontSize={24}
+        fontWeight={500}>
         Automate Old School Runescape Tasks
       </Typography>
       <Box
-        mt={5}>
-        <Button variant='contained'>
+        pl={'5px'}
+        mt={'32px'}>
+        <Button variant='outlined' size='large'>
           Learn More
         </Button>
       </Box>
@@ -41,30 +42,21 @@ export default function Home(): JSX.Element {
   return (
     <Layout>
       <main>
-        <Grid 
-          container
-          direction="row"
+        <Box
           height='calc(100vh - 153px)'
-          pt='280px'
+          pt='7%'
         >
-          <Grid 
-            item 
-            md={5}
-            textAlign='right'>
+          <Box
+            textAlign={'center'}>
               <Box
-                component='img'
-                alt='osrs bots logo'
-                className='homepage-osrs-bots-logo'
+                component={'img'}
+                alt={'osrs bots logo'}
+                width={'50%'}
                 src={useBaseUrl('/img/osrs-bots-logo.jpg')}
               />
-          </Grid>
-          <Grid 
-            item 
-            md={7}
-            pl='75px'>
               <HomepageMessage />
-          </Grid>
-        </Grid>
+          </Box>
+        </Box>
       </main>
     </Layout>
   );
