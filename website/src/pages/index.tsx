@@ -10,12 +10,14 @@ import AppHero from '../components/AppHero';
 import Disclaimer from '../components/Disclaimer';
 import PriceListDesktop from '../components/PriceListDesktop';
 import PriceListMobile from '../components/PriceListMobile';
+import PriceListTablet from '../components/PriceListTablet';
 import Faqs from '../components/Faqs';
 import Connect from '../components/Connect';
-import Donate from '../components/Donation';
 
 export default function Home(): JSX.Element {
-  const isMobile = useMediaQuery({ maxWidth: 902 })
+  const isMobile = useMediaQuery({ maxWidth: 500 })
+  const isTablet = useMediaQuery({ minWidth: 500, maxWidth: 1200 })
+
   return (
     <Layout>
       <main>
@@ -24,10 +26,13 @@ export default function Home(): JSX.Element {
           pb={'350px'}
         >
           <AppHero/>
-          {isMobile &&
-            <PriceListMobile/>
+          {isMobile && 
+            <PriceListMobile />
           }
-          {!isMobile &&
+          {isTablet &&
+            <PriceListTablet/>
+          }
+          {!isTablet && !isMobile &&
             <PriceListDesktop/>
           }
           <About />
