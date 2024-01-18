@@ -10,6 +10,7 @@ import {
   Stack
 } from '@mui/material';
 import { ExpandMore } from '@mui/icons-material'
+import { MuiThemeWrapper } from '../MuiThemeWrapper.tsx';
 
 const faqs = [
   {
@@ -90,20 +91,20 @@ export default function Faqs(): JSX.Element {
 function MapFaqs(): JSX.Element[] {
   return faqs.map(({question, answer}, i) => {
       return (
-        <Accordion>
-          <AccordionSummary
-            expandIcon={<ExpandMore />}
-            aria-controls={`panel${i}-content`}
-            id={`panel${i}-header`}
-          >
-            {question}
-          </AccordionSummary>
-          <AccordionDetails>
-            <Box pb={'10px'}>
-              {answer}
-            </Box>
-          </AccordionDetails>
-        </Accordion>
+          <Accordion>
+            <AccordionSummary
+              expandIcon={<ExpandMore />}
+              aria-controls={`panel${i}-content`}
+              id={`panel${i}-header`}
+            >
+              {question}
+            </AccordionSummary>
+            <AccordionDetails>
+              <Box pb={'10px'}>
+                {answer}
+              </Box>
+            </AccordionDetails>
+          </Accordion>
       )
     })
 }
