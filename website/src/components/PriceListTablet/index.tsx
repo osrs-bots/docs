@@ -40,9 +40,7 @@ function Perk({perk}): JSX.Element {
 export default function PriceListTablet(): JSX.Element {
   return (
     <Box 
-      className={'site-container'}
-      mt={'6%'}
-      mb={'6%'}>
+      className={'site-section-title'}>
       <Typography
           fontSize={'45px'}
           fontWeight={700}

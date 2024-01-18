@@ -37,9 +37,7 @@ export default function PriceListMobile(): JSX.Element {
     <Box
         className='site-container'>
         <Typography
-            fontSize={'45px'}
-            fontWeight={700}
-            mb={'40px'}>
+            className={'site-section-title'}>
             Subscribe
         </Typography>
         <Stack textAlign={'center'}>

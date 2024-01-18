@@ -150,6 +150,7 @@ button[class="searchClearButton_node_modules-@easyops-cn-docusaurus-search-local
 
 .site-home-container {
   padding-top: 10%;
+  text-align: left;
 }
 
 .site-logo {
@@ -166,22 +167,31 @@ button[class="searchClearButton_node_modules-@easyops-cn-docusaurus-search-local
   margin-top: '18px' !important;
 }
 
+.site-section-title {
+  font-size: 45px !important;
+  font-weight: 700 !important;
+  margin-bottom: 40px !important;
+}
+
 /* Smartphones (portrait) ----------- */
 @media only screen 
-and (min-width : 420px) {
+and (max-width : 500px) {
   .site-title {
+    text-align: center;
     margin-top: '25px' !important;
     font-size: 24px !important;
   }
   .site-tag-line {
+    text-align: center;
     font-size: 15px !important;
   }
   .site-home-container {
+    text-align: center;
     padding-top: 20%;
   }
   .site-container {
-    width: 90%;
-    margin-left: 5%;
+    width: calc(100% - 6px);
+    margin-left: 3px;
   }
   .site-logo {
     width: 90%;
@@ -193,7 +203,7 @@ and (min-width : 420px) {
 
 /* iPads (portrait) ----------- */
 @media only screen 
-and (min-width : 768px) {
+and (min-width : 500px) and (max-width: 900) {
   .site-title {
     font-size: 30px !important;
   }

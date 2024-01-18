@@ -13,7 +13,6 @@ export default function AppHero(): JSX.Element {
     return (
       <Box
         className='site-container'
-        textAlign={'left'}
       >
         <Typography
           className='site-title'
@@ -32,8 +31,11 @@ export default function AppHero(): JSX.Element {
           <Button 
             component={Link}
             target='_blank'
-            variant='outlined' 
-            href='https://github.com/osrs-bots/osrs-python-bot?tab=readme-ov-file#osrs-python-bot'>
+            variant='outlined'
+            onClick={()=> {
+              const ele = document.getElementById('about')
+              ele.scrollIntoView({ behavior: 'smooth', })
+            }}>
               Learn More
           </Button>
         </Box>

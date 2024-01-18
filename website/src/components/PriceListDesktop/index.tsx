@@ -42,9 +42,7 @@ export default function PriceListDesktop(): JSX.Element {
       mt={'6%'}
       mb={'55px'}>
       <Typography
-          fontSize={'45px'}
-          fontWeight={700}
-          mb={'40px'}>
+          className={'site-section-title'}>
           Subscribe
       </Typography>
       <Grid
