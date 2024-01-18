@@ -281,3 +281,16 @@ and (min-width : 1600px) {
     width: 40%;
   }
 }
+
+.connect-icon {
+  height: 32px;
+  width: 32px;
+  margin-right: 26px;
+}
+
+.connect-icon:hover {
+  cursor: pointer;
+  height: 32px;
+  width: 32px;
+  margin-right: 26px;
+}
