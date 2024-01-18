@@ -13,7 +13,7 @@ import { ExpandMore } from '@mui/icons-material'
 
 const faqs = [
   {
-    question: '🐍 Do I need to install python? ',
+    question: '🐍 How do I install python and pip? ',
     answer: 
       <Stack>
         <Typography>

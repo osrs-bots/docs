@@ -12,7 +12,7 @@ export default function Disclaimer(): JSX.Element {
           Disclaimer
         </Typography>
         <Typography>
-          Using these scripts is solely at your own discretion and risk. Employing them may lead to a ban or loss of your old school runescape account. I cannot be held accountable for any misuse or consequences arising from the utilization of this code.
+          Using this software is at your own discretion and risk. Employing them may lead to a ban or loss of your old school runescape account. I cannot be held accountable for any misuse or consequences arising from the utilization of this code.
         </Typography>
     </Box>
   );
