@@ -33,7 +33,7 @@ export default function Connect(): JSX.Element {
             height='28px'
             width='28px'
             src={`img/icons/discord-${mode}-theme.svg`}/>
-          {/* <img
+          <img
             className='connect-icon' 
             height='28px'
             width='28px'
@@ -47,7 +47,7 @@ export default function Connect(): JSX.Element {
             className='connect-icon' 
             height='28px'
             width='28px'
-            src={`img/icons/facebook-${mode}-theme.svg`}/> */}
+            src={`img/icons/facebook-${mode}-theme.svg`}/>
         </Box>
     </Box>
   );
