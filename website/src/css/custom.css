@@ -190,8 +190,8 @@ and (max-width : 500px) {
     padding-top: 20%;
   }
   .site-container {
-    width: calc(100% - 6px);
-    margin-left: 3px;
+    width: calc(100% - 20px);
+    margin-left: 10px;
   }
   .site-logo {
     width: 90%;

@@ -9,14 +9,14 @@ export default function Connect(): JSX.Element {
   return (
     <Box
       className={'site-container'}
-      mt={'155px'}>
+      mt={'85px'}>
         <Typography
-          fontSize={'45px'}
-          fontWeight={700}
-          mb={'25px'}>
+          className={'site-section-title'}>
           Connect
         </Typography>
-        <Box component={'span'}>
+        <Box 
+          className={'site-connect-icons'}
+          component={'span'}>
           <img
             className='connect-icon' 
             height='28px'

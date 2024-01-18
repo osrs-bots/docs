@@ -74,7 +74,7 @@ export default function Faqs(): JSX.Element {
   return (
     <Box
       className={'site-container'}
-      mt={'125px'}>
+      mt={'85px'}>
         <Typography
           className={'site-section-title'}>
           Frequent Questions
@@ -87,7 +87,7 @@ export default function Faqs(): JSX.Element {
 function MapFaqs(): JSX.Element[] {
   return faqs.map(({question, answer}, i) => {
       return (
-          <Accordion>
+          <Accordion elevation={3}>
             <AccordionSummary
               expandIcon={<ExpandMore />}
               aria-controls={`panel${i}-content`}

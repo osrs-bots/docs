@@ -6,7 +6,7 @@ export default function Disclaimer(): JSX.Element {
   return (
     <Box
       className={'site-container'}
-      mt={'115px'}>
+      mt={'85px'}>
         <Typography
           className={'site-section-title'}>
           Disclaimer

@@ -5,6 +5,7 @@ import {
   Box,
   Button,
   Link,
+  Paper,
   Typography
 } from '@mui/material';
 export default function AppHero(): JSX.Element {
@@ -46,12 +47,13 @@ export default function AppHero(): JSX.Element {
   return (
     <Box
       textAlign={'center'}>
-        <Box
-        className={'site-logo'}
-        component={'img'}
-        alt={'osrs bots logo'}
-        src={useBaseUrl('/img/osrs-bots-logo.jpg')}
-        />
+        <Paper
+          elevation={3}
+          className={'site-logo'}
+          component={'img'}
+          alt={'osrs bots logo'}
+          src={useBaseUrl('/img/osrs-bots-logo.jpg')}
+          />
         <HomepageMessage />
     </Box>
   );

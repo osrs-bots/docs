@@ -1,5 +1,5 @@
 import React from 'react';
-import { Box, Button, Stack, Typography } from '@mui/material';
+import { Box, Button, Card, Stack, Typography } from '@mui/material';
 import LockIcon from '@mui/icons-material/Lock';
 
 function ListBronzePerks(): JSX.Element[] {
@@ -40,115 +40,116 @@ export default function PriceListMobile(): JSX.Element {
             className={'site-section-title'}>
             Subscribe
         </Typography>
-        <Stack textAlign={'center'}>
+          <Stack textAlign={'center'}>
             {/* BRONZE */}
-            <Stack
-              border={'1px solid black'}
-              p={'15px'}>
-              <Box>
-                <img src='img/crown-bronze.svg'/>
-              </Box>
-              <Typography
-                color={'#967545'}>
-                Bronze
-              </Typography>
-              {/* BRONZE PRICING */}
-              <Box
-                mt={'10px'}
-                mb={'5px'}>
-                <Typography>
-                  FREE
+            <Card sx={{ marginBottom: '25px' }} elevation={3}>
+              <Stack
+                p={'15px'}>
+                <Box>
+                  <img src='img/crown-bronze.svg'/>
+                </Box>
+                <Typography
+                  color={'#967545'}>
+                  Bronze
                 </Typography>
-                <Typography>
-                    -------------
-                </Typography>
-              </Box>
-              {/* BRONZE PERKS */}
-              <ListBronzePerks />
-              <Box
-                mt={'10px'}
-                mb={'5px'}>
-                <Button variant='outlined'>
-                  Get Started
-                </Button>
-              </Box>
-            </Stack>
+                {/* BRONZE PRICING */}
+                <Box
+                  mt={'10px'}
+                  mb={'5px'}>
+                  <Typography>
+                    FREE
+                  </Typography>
+                  <Typography>
+                      -------------
+                  </Typography>
+                </Box>
+                {/* BRONZE PERKS */}
+                <ListBronzePerks />
+                <Box
+                  mt={'10px'}
+                  mb={'5px'}>
+                  <Button variant='outlined'>
+                    Get Started
+                  </Button>
+                </Box>
+              </Stack>
+            </Card>
 
             {/* SILVER */}
-            <Stack
-              border={'1px solid black'}
-              mt={'25px'}
-              p={'15px'}>
-              <Box>
-                <img src='img/crown-silver.svg'/>
-              </Box>
-              <Typography
-                color={'#c0c0c0'}>
-                Bronze
-              </Typography>
-              {/* SILVER PRICING */}
-              <Box
-                mt={'10px'}
-                mb={'5px'}>
-                <Typography>
-                  FREE
+            <Card sx={{ marginBottom: '25px' }} elevation={3}>
+              <Stack
+                mt={'25px'}
+                p={'15px'}>
+                <Box>
+                  <img src='img/crown-silver.svg'/>
+                </Box>
+                <Typography
+                  color={'#c0c0c0'}>
+                  Bronze
                 </Typography>
-                <Typography>
-                  Request Trial
-                </Typography>
-              </Box>
-              {/* SILVER PERKS */}
-              <ListSilverPerks />
-              <Box
-                mt={'10px'}
-                mb={'5px'}>
-                <Button 
-                  disabled 
-                  variant='outlined' 
-                  endIcon={<LockIcon/>}>
-                  Locked
-                </Button>
-              </Box>
-            </Stack>
+                {/* SILVER PRICING */}
+                <Box
+                  mt={'10px'}
+                  mb={'5px'}>
+                  <Typography>
+                    FREE
+                  </Typography>
+                  <Typography>
+                    Request Trial
+                  </Typography>
+                </Box>
+                {/* SILVER PERKS */}
+                <ListSilverPerks />
+                <Box
+                  mt={'10px'}
+                  mb={'5px'}>
+                  <Button 
+                    disabled 
+                    variant='outlined' 
+                    endIcon={<LockIcon/>}>
+                    Locked
+                  </Button>
+                </Box>
+              </Stack>
+            </Card>
 
             {/* GOLD */}
-            <Stack
-              border={'1px solid black'}
-              mt={'25px'}
-              p={'15px'}>
-              <Box>
-                <img src='img/crown-gold.svg'/>
-              </Box>
-              <Typography
-                color={'#ffd700'}>
-                Gold
-              </Typography>
-              {/* GOLD PRICING */}
-              <Box>
-                <Typography component='div'>
-                  <Box fontWeight={700} display='inline'>$2.99</Box> 
-                  &nbsp;USD
+            <Card sx={{ marginBottom: '25px' }} elevation={3}>
+              <Stack
+                mt={'25px'}
+                p={'15px'}>
+                <Box>
+                  <img src='img/crown-gold.svg'/>
+                </Box>
+                <Typography
+                  color={'#ffd700'}>
+                  Gold
                 </Typography>
+                {/* GOLD PRICING */}
+                <Box>
+                  <Typography component='div'>
+                    <Box fontWeight={700} display='inline'>$2.99</Box> 
+                    &nbsp;USD
+                  </Typography>
 
-                <Typography>
-                  Per key / month
-                </Typography>
-              </Box>
-              {/* GOLD PERKS */}
-              <ListGoldPerks />
-              <Box
-                mt={'10px'}
-                mb={'5px'}>
-                <Button 
-                  disabled 
-                  variant='outlined' 
-                    endIcon={<LockIcon/>}>
-                  Locked
-                </Button>
-              </Box>
-            </Stack>
-
-
+                  <Typography>
+                    Per key / month
+                  </Typography>
+                </Box>
+                {/* GOLD PERKS */}
+                <ListGoldPerks />
+                <Box
+                  mt={'10px'}
+                  mb={'5px'}>
+                  <Button 
+                    disabled 
+                    variant='outlined' 
+                      endIcon={<LockIcon/>}>
+                    Locked
+                  </Button>
+                </Box>
+              </Stack>
+            </Card>
         </Stack>
     </Box>
   );

@@ -25,7 +25,7 @@ export default function Home(): JSX.Element {
         <main>
           <Box
             className={'site-home-container'}
-            pb={'350px'}
+            pb={'100px'}
           >
             <AppHero/>
             {isMobile && 
