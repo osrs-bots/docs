@@ -7,8 +7,7 @@ export default function Connect(): JSX.Element {
   const { isDarkTheme } = useColorMode();
   return (
     <Box
-      width={'60%'}
-      ml={'20%'}
+      className={'site-container'}
       mt={'125px'}>
         <Typography
           fontSize={'45px'}
