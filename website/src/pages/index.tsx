@@ -16,7 +16,7 @@ export default function Home(): JSX.Element {
       <main>
         <Box
           className={'site-home-container'}
-          pb={'200px'}
+          pb={'350px'}
         >
           <AppHero/>
           <PriceList/>
