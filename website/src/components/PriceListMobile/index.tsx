@@ -66,6 +66,7 @@ export default function PriceListMobile(): JSX.Element {
                 color={'#967545'}>
                 Bronze
               </Typography>
+              {/* BRONZE GROWN PRICING */}
               <Box>
                 <Typography>
                   FREE
@@ -100,6 +101,7 @@ export default function PriceListMobile(): JSX.Element {
           pt={'12px'} 
           borderLeft={'1px solid black'}
           borderRight={'1px solid black'}>
+            {/* SILVER CROWN INFO */}
             <Stack pt={'10px'} pb={'10px'}>
               <Box>
                 <img src='img/crown-silver.svg'/>
@@ -108,6 +110,7 @@ export default function PriceListMobile(): JSX.Element {
                   Silver
                 </Typography>
               </Box>
+              {/* SILVER GROWN PRICING */}
               <Box>
                 <Typography>
                   FREE
@@ -143,6 +146,7 @@ export default function PriceListMobile(): JSX.Element {
           item 
           md={4}
           pt={'12px'}>
+            {/* GOLD CROWN INFO */}
             <Stack pt={'10px'} pb={'10px'}>
               <Box>
                 <img src='img/crown-gold.svg'/>
@@ -151,9 +155,10 @@ export default function PriceListMobile(): JSX.Element {
                   Gold
                 </Typography>
               </Box>
+              {/* GOLD GROWN PRICING */}
               <Box>
                 <Typography>
-                  $1 USD
+                  $2.99 USD
                 </Typography>
                 <Typography>
                   Per key / month
