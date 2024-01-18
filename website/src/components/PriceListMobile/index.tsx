@@ -56,7 +56,7 @@ export default function PriceListMobile(): JSX.Element {
                 <Box
                   mt={'10px'}
                   mb={'5px'}>
-                  <Typography>
+                  <Typography fontWeight={700}>
                     FREE
                   </Typography>
                   <Typography>
@@ -91,7 +91,7 @@ export default function PriceListMobile(): JSX.Element {
                 <Box
                   mt={'10px'}
                   mb={'5px'}>
-                  <Typography>
+                  <Typography fontWeight={700}>
                     FREE
                   </Typography>
                   <Typography>

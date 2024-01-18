@@ -20,6 +20,19 @@ const faqs = [
         <Typography>
           Yes, here is a guide for installing python and pip on windows.
         </Typography>
+        <Typography mt={'20px'}>
+          1.   Visit python.org and download the latest version of Python for your operating system. You can choose either the 32-bit or the 64-bit installer, depending on your PC’s architecture.
+        </Typography>
+        <Typography mt={'20px'}>
+          2.   Run the downloaded file and follow the instructions on the screen. Make sure to check the box that says “Add Python to PATH” to enable running Python from the command prompt. Also, check the box that says “pip” to ensure that the package manager is installed along with Python. 
+        </Typography>
+        <Typography mt={'20px'}>
+          3.   Wait for the installation to finish and close the window. You can verify that Python and pip are installed correctly by opening the command prompt and typing python --version and pip --version. You should see the respective versions of Python and pip displayed on the screen.
+        </Typography>
+        <Typography mt={'20px'}>
+          4.  Congratulations, you have successfully installed Python and pip on your PC! You can now use them to run Python scripts and install Python libraries. 
+        </Typography>
+
       </Stack>
   },
   {
