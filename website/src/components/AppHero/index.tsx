@@ -46,7 +46,8 @@ export default function AppHero(): JSX.Element {
 
   return (
     <Box
-      textAlign={'center'}>
+      textAlign={'center'}
+      mb={'85px'}>
         <Paper
           elevation={3}
           className={'site-logo'}
