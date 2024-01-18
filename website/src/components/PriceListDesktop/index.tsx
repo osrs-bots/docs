@@ -18,7 +18,7 @@ function ListSilverPerks(): JSX.Element[] {
 }
 
 function ListGoldPerks(): JSX.Element[] {
-  const list = ['Future AI Bots', 'Dedicated Support', ]
+  const list = ['Future AI Bots', 'Dedicated Support', 'Bot Key']
   return ListPerks(list)
 }
 
@@ -35,7 +35,7 @@ function Perk({perk}): JSX.Element {
     </Box>
   )
 }
-export default function PriceListDeskTop(): JSX.Element {
+export default function PriceListDesktop(): JSX.Element {
   return (
     <Box 
       width={'60%'}
@@ -53,6 +53,7 @@ export default function PriceListDeskTop(): JSX.Element {
         border={'1px solid black'}
         borderRadius={'5px'}
         container>
+          {/* BRONZE */}
         <Grid 
           item
           md={4}
@@ -66,6 +67,7 @@ export default function PriceListDeskTop(): JSX.Element {
                 color={'#967545'}>
                 Bronze
               </Typography>
+              {/* BRONZE GROWN PRICING */}
               <Box>
                 <Typography>
                   FREE
@@ -94,12 +96,14 @@ export default function PriceListDeskTop(): JSX.Element {
               </Stack>
             </Stack>
         </Grid>
+        {/* SILVER */}
         <Grid 
           item 
           md={4}
           pt={'12px'} 
           borderLeft={'1px solid black'}
           borderRight={'1px solid black'}>
+            {/* SILVER CROWN INFO */}
             <Stack pt={'10px'} pb={'10px'}>
               <Box>
                 <img src='img/crown-silver.svg'/>
@@ -108,6 +112,7 @@ export default function PriceListDeskTop(): JSX.Element {
                   Silver
                 </Typography>
               </Box>
+              {/* SILVER GROWN PRICING */}
               <Box>
                 <Typography>
                   FREE
@@ -139,10 +144,12 @@ export default function PriceListDeskTop(): JSX.Element {
               </Stack> 
             </Stack>
         </Grid>
+        {/* GOLD */}
         <Grid 
           item 
           md={4}
           pt={'12px'}>
+            {/* GOLD CROWN INFO */}
             <Stack pt={'10px'} pb={'10px'}>
               <Box>
                 <img src='img/crown-gold.svg'/>
@@ -151,10 +158,13 @@ export default function PriceListDeskTop(): JSX.Element {
                   Gold
                 </Typography>
               </Box>
+              {/* GOLD GROWN PRICING */}
               <Box>
-                <Typography>
-                  $1 USD
+                <Typography component='div'>
+                  <Box fontWeight={700} display='inline'>$2.99</Box> 
+                  &nbsp;USD
                 </Typography>
+
                 <Typography>
                   Per key / month
                 </Typography>
