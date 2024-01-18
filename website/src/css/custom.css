@@ -139,21 +139,6 @@ button[class="searchClearButton_node_modules-@easyops-cn-docusaurus-search-local
   border: 4px solid #f4f4f4;
 }
 
-.textWithTrailingIcon {
-  display: flex; 
-  justify-content: center;
-  align-items: center;
-}
-
-.textWithTrailingIcon p {
-  margin: 0; 
-  padding-right: 5px;
-}
-
-.textWithTrailingIcon img {
-  width: 24px;
-}
-
 .favicon-logo {
   border-radius: 25px;
 }

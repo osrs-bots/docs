@@ -26,7 +26,7 @@ export default function Connect(): JSX.Element {
             className='connect-icon' 
             height='28px'
             width='28px'
-            src='img/icons/github.svg'/>
+            src='img/icons/github-light-theme.svg'/>
           <img
             className='connect-icon' 
             height='28px'

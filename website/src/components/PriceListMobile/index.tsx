@@ -18,7 +18,7 @@ function ListSilverPerks(): JSX.Element[] {
 }
 
 function ListGoldPerks(): JSX.Element[] {
-  const list = ['Future AI Bots', 'Dedicated Support', ]
+  const list = ['Future AI Bots', 'Dedicated Support', 'Bot Key']
   return ListPerks(list)
 }
 
@@ -38,8 +38,8 @@ function Perk({perk}): JSX.Element {
 export default function PriceListMobile(): JSX.Element {
   return (
     <Box 
-      width={'60%'}
-      ml={'20%'}
+      width={'90%'}
+      ml={'5%'}
       mt={'6%'}
       mb={'100px'}>
       <Typography
@@ -53,12 +53,12 @@ export default function PriceListMobile(): JSX.Element {
         border={'1px solid black'}
         borderRadius={'5px'}
         container>
-        <Grid 
-          item
-          md={4}
-          pt={'12px'}>
-            <Stack pt={'10px'} pb={'10px'}>
-              {/* BRONZE CROWN INFO */}
+          <Grid item md={3}>
+            <Stack
+              pt={'20px'}
+              pl={'15px'}
+              pr={'15px'}
+              borderRight={'1px solid black'}>
               <Box>
                 <img src='img/crown-bronze.svg'/>
               </Box>
@@ -75,41 +75,41 @@ export default function PriceListMobile(): JSX.Element {
                   -------------
                 </Typography>
               </Box>
-              {/* BRONZE ACTION BUTTON */}
               <Box
                 mb={'10px'}
-                pt={'15px'}
-                pb={'25px'}
-                borderBottom={'1px solid black'}>
+                pt={'5px'}
+                pb={'5px'}>
                 <Button variant='outlined'>
                   Get Started
                 </Button>
               </Box>
-              {/* BRONZE PERKS LIST */}
+            </Stack>
+            {/* BRONZE ACTION BUTTON */}
+          </Grid>
+          <Grid item md={9} textAlign={'center'}>
               <Stack
-                mt={'15px'}
-                pl={'8%'}
+                width={'100%'}
+                mt={'35%'}
                 mb={'10px'}
-                textAlign={'left'}>
+                pl={'25px'}
+                textAlign={'left'}
+                >
                 <ListBronzePerks/>
               </Stack>
-            </Stack>
-        </Grid>
-        <Grid 
-          item 
-          md={4}
-          pt={'12px'} 
-          borderLeft={'1px solid black'}
-          borderRight={'1px solid black'}>
-            {/* SILVER CROWN INFO */}
-            <Stack pt={'10px'} pb={'10px'}>
+          </Grid>
+          <Grid item md={3}>
+            <Stack
+              pt={'20px'}
+              pl={'15px'}
+              pr={'15px'}
+              borderRight={'1px solid black'}>
               <Box>
                 <img src='img/crown-silver.svg'/>
-                <Typography
-                  color={'#c0c0c0'}>
-                  Silver
-                </Typography>
               </Box>
+              <Typography
+                color={'#c0c0c0'}>
+                Bronze
+              </Typography>
               {/* SILVER GROWN PRICING */}
               <Box>
                 <Typography>
@@ -119,74 +119,74 @@ export default function PriceListMobile(): JSX.Element {
                   Request Trial
                 </Typography>
               </Box>
-              {/* SILVER ACTION BUTTON */}
               <Box
                 mb={'10px'}
-                pt={'15px'}
-                pb={'25px'}
-                borderBottom={'1px solid black'}>
-                <Button 
-                  disabled 
-                  variant='outlined'
-                  endIcon={<LockIcon/>}>
-                  Locked
+                pt={'5px'}
+                pb={'5px'}>
+                <Button variant='outlined'>
+                  Get Started
                 </Button>
               </Box>
-              {/* SILVER PERK LIST */}
-              <Stack
-                mt={'15px'}
-                pl={'8%'}
-                mb={'10px'}
-                textAlign={'left'}>
-              <ListSilverPerks/>
-              </Stack> 
             </Stack>
-        </Grid>
-        <Grid 
-          item 
-          md={4}
-          pt={'12px'}>
-            {/* GOLD CROWN INFO */}
-            <Stack pt={'10px'} pb={'10px'}>
+            {/* SILVER ACTION BUTTON */}
+          </Grid>
+          <Grid item md={9} textAlign={'center'}>
+              <Stack
+                width={'100%'}
+                mt={'35%'}
+                mb={'10px'}
+                pl={'25px'}
+                textAlign={'left'}
+                >
+                <ListSilverPerks/>
+              </Stack>
+          </Grid>
+          <Grid item md={3}>
+            <Stack
+              pt={'20px'}
+              pl={'15px'}
+              pr={'15px'}
+              borderRight={'1px solid black'}>
               <Box>
                 <img src='img/crown-gold.svg'/>
-                <Typography
-                  color={'#ffd700'}>
-                  Gold
-                </Typography>
               </Box>
+              <Typography
+                color={'#ffd700'}>
+                Gold
+              </Typography>
               {/* GOLD GROWN PRICING */}
               <Box>
-                <Typography>
-                  $2.99 USD
+                <Typography component='div'>
+                  <Box fontWeight={700} display='inline'>$2.99</Box> 
+                  &nbsp;USD
                 </Typography>
+
                 <Typography>
                   Per key / month
                 </Typography>
               </Box>
-              {/* GOLD ACTION BUTTON */}
               <Box
                 mb={'10px'}
-                pt={'15px'}
-                pb={'25px'}
-                borderBottom={'1px solid black'}>
-                <Button 
-                  disabled 
-                  variant='outlined'
-                  endIcon={<LockIcon/>}>
-                  Locked
+                pt={'5px'}
+                pb={'5px'}>
+                <Button variant='outlined'>
+                  Get Started
                 </Button>
               </Box>
-              {/* GOLD PERKS LIST */}
+            </Stack>
+            {/* BRONZE ACTION BUTTON */}
+          </Grid>
+          <Grid item md={9} textAlign={'center'}>
               <Stack
-                mt={'15px'}
-                pl={'8%'}
+                width={'100%'}
+                mt={'35%'}
                 mb={'10px'}
-                textAlign={'left'}>
+                pl={'25px'}
+                textAlign={'left'}
+                >
                 <ListGoldPerks/>
               </Stack>
-            </Stack>
-        </Grid>
+          </Grid>
       </Grid>
     </Box>
   );
