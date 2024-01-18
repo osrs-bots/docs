@@ -1,44 +1,14 @@
 import Layout from '@theme/Layout';
 import React from 'react';
-import useBaseUrl from '@docusaurus/useBaseUrl';
-import { 
+import {
   Box,
-  Button,
-  Link,
-  Typography
 } from '@mui/material';
-
-function HomepageMessage() {
-  return (
-    <Box
-      className='site-container'
-      textAlign={'left'}
-    >
-      <Typography
-        className='site-title'
-        mt={'15px'}>
-        OSRS Bots 🪄
-      </Typography>
-      <Typography
-        className='site-tag-line'
-        fontWeight={500}>
-        Automate Old School Runescape Tasks
-      </Typography>
-      <Box
-        className='site-learn-more-button'
-        mt={'32px'}
-        mb={'20px'}>
-        <Button 
-          component={Link}
-          target='_blank'
-          variant='outlined' 
-          href='https://github.com/osrs-bots/osrs-python-bot?tab=readme-ov-file#osrs-python-bot'>
-            Learn More
-        </Button>
-      </Box>
-    </Box>
-  );
-}
+import About from '../components/About';
+import AppHero from '../components/AppHero';
+import Disclaimer from '../components/Disclaimer';
+import PriceList from '../components/PriceListDesktop';
+import Faqs from '../components/Faqs';
+import Connect from '../components/Connect';
 
 export default function Home(): JSX.Element {
   return (
@@ -46,19 +16,14 @@ export default function Home(): JSX.Element {
       <main>
         <Box
           className={'site-home-container'}
+          pb={'200px'}
         >
-          {/* App Hero */}
-          <Box
-            textAlign={'center'}>
-              <Box
-                className={'site-logo'}
-                component={'img'}
-                alt={'osrs bots logo'}
-                src={useBaseUrl('/img/osrs-bots-logo.jpg')}
-              />
-              <HomepageMessage />
-          </Box>
-          {/* Pricing List */}
+          <AppHero/>
+          <PriceList/>
+          <About />
+          <Disclaimer/>
+          <Faqs/>
+          <Connect/>
         </Box>
       </main>
     </Layout>
