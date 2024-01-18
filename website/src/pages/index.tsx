@@ -6,7 +6,8 @@ import {
 import About from '../components/About';
 import AppHero from '../components/AppHero';
 import Disclaimer from '../components/Disclaimer';
-import PriceList from '../components/PriceListDesktop';
+import PriceListDesktop from '../components/PriceListDesktop';
+import PriceListMobile from '../components/PriceListMobile';
 import Faqs from '../components/Faqs';
 import Connect from '../components/Connect';
 
@@ -19,7 +20,7 @@ export default function Home(): JSX.Element {
           pb={'350px'}
         >
           <AppHero/>
-          <PriceList/>
+          <PriceListDesktop/>
           <About />
           <Disclaimer/>
           <Faqs/>
