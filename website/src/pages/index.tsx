@@ -10,6 +10,7 @@ import PriceListDesktop from '../components/PriceListDesktop';
 import PriceListMobile from '../components/PriceListMobile';
 import Faqs from '../components/Faqs';
 import Connect from '../components/Connect';
+import Donate from '../components/Donation';
 
 export default function Home(): JSX.Element {
   return (

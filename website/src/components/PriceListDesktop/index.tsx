@@ -41,7 +41,7 @@ export default function PriceListDesktop(): JSX.Element {
       width={'60%'}
       ml={'20%'}
       mt={'6%'}
-      mb={'100px'}>
+      mb={'55px'}>
       <Typography
           fontSize={'45px'}
           fontWeight={700}

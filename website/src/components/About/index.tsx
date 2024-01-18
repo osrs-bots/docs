@@ -7,7 +7,8 @@ export default function About(): JSX.Element {
   return (
     <Box
       width={'60%'}
-      ml={'20%'}>
+      ml={'20%'}
+      mt={'115px'}>
         <Typography
           fontSize={'45px'}
           fontWeight={700}

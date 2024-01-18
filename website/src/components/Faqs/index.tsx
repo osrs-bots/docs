@@ -23,27 +23,49 @@ const faqs = [
   },
   {
     question: '🦺 Are these scripts safe? ',
-    answer: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.'
+    answer: 
+      <Stack>
+        <Typography>
+          These bots are designed to interact with the game by detecting pixel locations, rather than accessing the client directly. This makes them less likely to be detected by anti-cheat systems. The bots also mimic human xp rates to avoid suspicion.
+        </Typography>
+        <Typography pt={'20px'}>
+        To further reduce the risk of being banned, it is recommended to switch worlds frequently, follow the bot instructions carefully, and be conscious of runtime.
+        </Typography>
+      </Stack>
+      
+      
   },
   {
     question: '🐜 How do I report a problem?  ',
-    answer: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.'
+    answer:
+      <Typography>
+        If you encounter any problem, you can contact us through the following channels: open an issue on our GitHub repository, mention us on Twitter, or send us a message on Discord.
+      </Typography>
   },
   {
-    question: '👑 When is Gold tier available? ',
-    answer: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.'
+    question: '👑 When will Gold tier be available? ',
+    answer:
+      <Typography>
+        Gold tier bots will use advanced AI computer vision and will be available mid to late 2024. In the meantime, you can register for the silver tier to enjoy all the basic bots.
+      </Typography>
   },
   {
     question: '🤖 How can I request a new bot? ',
-    answer: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.'
+    answer:
+      <Typography>
+        If you have an idea, you can contact us through the following channels: open an issue on our GitHub repository, mention us on Twitter, or send us a message on Discord.
+      </Typography>
   },
   {
     question: '🍏 Is Mac supported? ',
-    answer: 'Apologees, only windows is supported! We are diligently working on mac support.'
+    answer: 'We regret to inform you that only Windows is currently supported. However, we are actively working on providing support for Mac users.'
   },
   {
-    question: '🧑‍💻 Can I contribute to the projects? ',
-    answer: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.'
+    question: '🧑‍💻 Can I contribute to the project? ',
+    answer: 
+      <Typography>
+        If you would like to contribute, you can contact us through the following channels: open an issue on our GitHub repository, mention us on Twitter, or send us a message on Discord.
+      </Typography>
   }
 ];
 
@@ -66,18 +88,20 @@ export default function Faqs(): JSX.Element {
 }
 
 function MapFaqs(): JSX.Element[] {
-  return faqs.map(({question, answer}) => {
+  return faqs.map(({question, answer}, i) => {
       return (
         <Accordion>
           <AccordionSummary
             expandIcon={<ExpandMore />}
-            aria-controls="panel1-content"
-            id="panel1-header"
+            aria-controls={`panel${i}-content`}
+            id={`panel${i}-header`}
           >
             {question}
           </AccordionSummary>
           <AccordionDetails>
-            {answer}
+            <Box pb={'10px'}>
+              {answer}
+            </Box>
           </AccordionDetails>
         </Accordion>
       )
