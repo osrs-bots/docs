@@ -17,9 +17,9 @@ export default function About(): JSX.Element {
           If you are looking for a way to play Old School Runescape without spending hours on repetitive tasks, you might be interested in osrs bots. This old school runescape bot uses pixels to automate tasks. 
         </Typography>
         <Typography mt={'25px'}>
-          <Link href='https://github.com/osrs-bots/osrs-python-bot?tab=readme-ov-file#setup-guide'>
+          <a target='_blank' href='https://github.com/osrs-bots/osrs-python-bot?tab=readme-ov-file#setup-guide'>
             Get Started
-          </Link>
+          </a>
         </Typography>
     </Box>
   );
