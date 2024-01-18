@@ -1,6 +1,7 @@
 
 
 import React from 'react';
+import { useMediaQuery } from 'react-responsive'
 import { 
   Accordion,
   AccordionSummary,
@@ -71,14 +72,23 @@ const faqs = [
 ];
 
 export default function Faqs(): JSX.Element {
+  const isMobile = useMediaQuery({ maxWidth: 500 })
   return (
     <Box
       className={'site-container'}
       mt={'85px'}>
-        <Typography
-          className={'site-section-title'}>
-          Frequent Questions
-        </Typography>
+        
+          {isMobile ? 
+            <Typography
+              className={'site-section-title'}>
+                FAQs
+            </Typography>
+          :
+            <Typography
+              className={'site-section-title'}>
+                Frequent Questions
+            </Typography>
+          }
         <AccordionUsage/>
     </Box>
   );
