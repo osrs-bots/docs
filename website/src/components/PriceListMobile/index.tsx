@@ -35,7 +35,7 @@ function Perk({perk}): JSX.Element {
     </Box>
   )
 }
-export default function PriceListDeskTop(): JSX.Element {
+export default function PriceListMobile(): JSX.Element {
   return (
     <Box 
       width={'60%'}
