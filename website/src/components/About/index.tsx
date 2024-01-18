@@ -7,7 +7,7 @@ export default function About(): JSX.Element {
   return (
     <Box
       className={'site-container'}
-      mt={'115px'}>
+      mt={'85px'}>
         <Typography
           id='about'
           className={'site-section-title'}>
