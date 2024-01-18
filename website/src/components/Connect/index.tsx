@@ -14,7 +14,8 @@ export default function Connect(): JSX.Element {
           className={'site-section-title'}>
           Connect
         </Typography>
-        <Box 
+        <Box
+          textAlign={'center'}
           className={'site-connect-icons'}
           component={'span'}>
           <img

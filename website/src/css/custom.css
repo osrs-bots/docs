@@ -280,12 +280,10 @@ and (min-width : 1600px) {
 .connect-icon {
   height: 32px;
   width: 32px;
-  margin-right: 26px;
+  margin-left: 13px;
+  margin-right: 13px;
 }
 
 .connect-icon:hover {
   cursor: pointer;
-  height: 32px;
-  width: 32px;
-  margin-right: 26px;
 }
