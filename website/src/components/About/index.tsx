@@ -9,9 +9,8 @@ export default function About(): JSX.Element {
       className={'site-container'}
       mt={'115px'}>
         <Typography
-          fontSize={'45px'}
-          fontWeight={700}
-          mb={'25px'}>
+          id='about'
+          className={'site-section-title'}>
           About
         </Typography>
         <Typography>

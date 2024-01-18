@@ -10,7 +10,6 @@ import {
   Stack
 } from '@mui/material';
 import { ExpandMore } from '@mui/icons-material'
-import { MuiThemeWrapper } from '../MuiThemeWrapper.tsx';
 
 const faqs = [
   {
@@ -76,11 +75,8 @@ export default function Faqs(): JSX.Element {
     <Box
       className={'site-container'}
       mt={'125px'}>
-        
         <Typography
-          fontSize={'45px'}
-          fontWeight={700}
-          mb={'25px'}>
+          className={'site-section-title'}>
           Frequent Questions
         </Typography>
         <AccordionUsage/>

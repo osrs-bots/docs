@@ -9,7 +9,7 @@ export default function Connect(): JSX.Element {
   return (
     <Box
       className={'site-container'}
-      mt={'125px'}>
+      mt={'155px'}>
         <Typography
           fontSize={'45px'}
           fontWeight={700}

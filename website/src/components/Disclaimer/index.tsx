@@ -8,9 +8,7 @@ export default function Disclaimer(): JSX.Element {
       className={'site-container'}
       mt={'115px'}>
         <Typography
-          fontSize={'45px'}
-          fontWeight={700}
-          mb={'25px'}>
+          className={'site-section-title'}>
           Disclaimer
         </Typography>
         <Typography>
