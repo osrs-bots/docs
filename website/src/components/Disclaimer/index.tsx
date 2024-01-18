@@ -5,8 +5,7 @@ import React from 'react';
 export default function Disclaimer(): JSX.Element {
   return (
     <Box
-      width={'60%'}
-      ml={'20%'}
+      className={'site-container'}
       mt={'115px'}>
         <Typography
           fontSize={'45px'}

@@ -32,8 +32,6 @@ const faqs = [
         To further reduce the risk of being banned, it is recommended to switch worlds frequently, follow the bot instructions carefully, and be conscious of runtime.
         </Typography>
       </Stack>
-      
-      
   },
   {
     question: '🐜 How do I report a problem?  ',
@@ -58,7 +56,10 @@ const faqs = [
   },
   {
     question: '🍏 Is Mac supported? ',
-    answer: 'We regret to inform you that only Windows is currently supported. However, we are actively working on providing support for Mac users.'
+    answer: 
+      <Typography>
+        We regret to inform you that only Windows is currently supported. However, we are actively working on providing support for Mac users.
+      </Typography>
   },
   {
     question: '🧑‍💻 Can I contribute to the project? ',
@@ -72,8 +73,7 @@ const faqs = [
 export default function Faqs(): JSX.Element {
   return (
     <Box
-      width={'60%'}
-      ml={'20%'}
+      className={'site-container'}
       mt={'125px'}>
         
         <Typography

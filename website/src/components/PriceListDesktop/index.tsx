@@ -37,9 +37,8 @@ function Perk({perk}): JSX.Element {
 }
 export default function PriceListDesktop(): JSX.Element {
   return (
-    <Box 
-      width={'60%'}
-      ml={'20%'}
+    <Box
+      className={'site-container'}
       mt={'6%'}
       mb={'55px'}>
       <Typography

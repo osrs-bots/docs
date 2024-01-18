@@ -31,17 +31,18 @@ function ListPerks(list): JSX.Element[] {
 function Perk({perk}): JSX.Element {
   return (
     <Box>
-      ✅ {perk}
+      <Typography noWrap>
+        ✅ {perk}
+      </Typography>
     </Box>
   )
 }
 export default function PriceListMobile(): JSX.Element {
   return (
     <Box 
-      width={'90%'}
-      ml={'5%'}
+      className={'site-container'}
       mt={'6%'}
-      mb={'100px'}>
+      mb={'6%'}>
       <Typography
           fontSize={'45px'}
           fontWeight={700}
@@ -53,11 +54,9 @@ export default function PriceListMobile(): JSX.Element {
         border={'1px solid black'}
         borderRadius={'5px'}
         container>
-          <Grid item md={3}>
+          <Grid container item xs={6} sm={4} >
             <Stack
-              pt={'20px'}
-              pl={'15px'}
-              pr={'15px'}
+              p={'15px'}
               borderRight={'1px solid black'}>
               <Box>
                 <img src='img/crown-bronze.svg'/>
@@ -86,22 +85,17 @@ export default function PriceListMobile(): JSX.Element {
             </Stack>
             {/* BRONZE ACTION BUTTON */}
           </Grid>
-          <Grid item md={9} textAlign={'center'}>
+          <Grid container item xs={6} sm={8} textAlign={'center'}>
               <Stack
-                width={'100%'}
-                mt={'35%'}
-                mb={'10px'}
-                pl={'25px'}
-                textAlign={'left'}
+                textAlign={'left'} pt={'15%'}
                 >
                 <ListBronzePerks/>
               </Stack>
           </Grid>
-          <Grid item md={3}>
+          <Grid container item xs={6} sm={4}
+              borderBottom={'1px soild black'}>
             <Stack
-              pt={'20px'}
-              pl={'15px'}
-              pr={'15px'}
+              p={'15px'}
               borderRight={'1px solid black'}>
               <Box>
                 <img src='img/crown-silver.svg'/>
@@ -130,22 +124,21 @@ export default function PriceListMobile(): JSX.Element {
             </Stack>
             {/* SILVER ACTION BUTTON */}
           </Grid>
-          <Grid item md={9} textAlign={'center'}>
+          <Grid 
+            container 
+            item 
+            xs={6} 
+            sm={8}
+            textAlign={'center'}>
               <Stack
-                width={'100%'}
-                mt={'35%'}
-                mb={'10px'}
-                pl={'25px'}
-                textAlign={'left'}
+                textAlign={'left'} pt={'15%'}
                 >
                 <ListSilverPerks/>
               </Stack>
           </Grid>
-          <Grid item md={3}>
+          <Grid container item xs={6} sm={4}>
             <Stack
-              pt={'20px'}
-              pl={'15px'}
-              pr={'15px'}
+              p={'15px'}
               borderRight={'1px solid black'}>
               <Box>
                 <img src='img/crown-gold.svg'/>
@@ -176,13 +169,9 @@ export default function PriceListMobile(): JSX.Element {
             </Stack>
             {/* BRONZE ACTION BUTTON */}
           </Grid>
-          <Grid item md={9} textAlign={'center'}>
+          <Grid container item xs={6} sm={8}  textAlign={'center'}>
               <Stack
-                width={'100%'}
-                mt={'35%'}
-                mb={'10px'}
-                pl={'25px'}
-                textAlign={'left'}
+                textAlign={'left'} pt={'15%'}
                 >
                 <ListGoldPerks/>
               </Stack>
