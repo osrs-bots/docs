@@ -47,6 +47,7 @@ export default function Home(): JSX.Element {
         <Box
           className={'site-home-container'}
         >
+          {/* App Hero */}
           <Box
             textAlign={'center'}>
               <Box
@@ -57,6 +58,7 @@ export default function Home(): JSX.Element {
               />
               <HomepageMessage />
           </Box>
+          {/* Pricing List */}
         </Box>
       </main>
     </Layout>

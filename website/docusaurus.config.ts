@@ -74,6 +74,11 @@ const config: Config = {
         {
           href: 'https://github.com/osrs-bots/',
           className: 'header-github-link',
+          position: 'left',
+        },
+        {
+          href: 'https://github.com/osrs-bots/',
+          className: 'header-discord-link',
           'aria-label': 'GitHub Repository',
           position: 'left',
         },
