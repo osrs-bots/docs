@@ -39,11 +39,11 @@ export default function PriceListDesktop(): JSX.Element {
   return (
     <Box
       className={'site-container'}
-      mt={'6%'}
+      mt={'115px'}
       mb={'55px'}>
       <Typography
           className={'site-section-title'}>
-          Subscribe
+          Membership
       </Typography>
       <Grid
         textAlign={'center'}
