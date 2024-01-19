@@ -40,12 +40,10 @@ function Perk({perk}): JSX.Element {
 export default function PriceListTablet(): JSX.Element {
   return (
     <Box 
-      className={'site-section-title'}>
+      mt={'115px'}>
       <Typography
-          fontSize={'45px'}
-          fontWeight={700}
-          mb={'40px'}>
-          Subscribe
+        className={'site-section-title'}>
+          Membership
       </Typography>
       <Box sx={{ flexGrow: 1 }} border={'1px solid black'}>
         <Grid container textAlign={'center'}>

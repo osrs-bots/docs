@@ -28,6 +28,7 @@ export default function Home(): JSX.Element {
             pb={'100px'}
           >
             <AppHero/>
+            <About />
             {isMobile && 
               <PriceListMobile />
             }
@@ -37,7 +38,6 @@ export default function Home(): JSX.Element {
             {!isTablet && !isMobile &&
               <PriceListDesktop/>
             }
-            <About />
             <Disclaimer/>
             <Faqs/>
             <Connect/>

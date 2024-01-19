@@ -3,7 +3,7 @@ import type {Config} from '@docusaurus/types';
 import type * as Preset from '@docusaurus/preset-classic';
 
 const config: Config = {
-  title: 'docs',
+  title: 'Install osrs bots',
   favicon: 'img/osrs-bots-logo.jpg',
 
   // Set the production url of your site here

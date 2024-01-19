@@ -35,10 +35,11 @@ function ListBronzePerks(): JSX.Element[] {
 export default function PriceListMobile(): JSX.Element {
   return (
     <Box
-        className='site-container'>
+        className='site-container'
+        mt={'115px'}>
         <Typography
             className={'site-section-title'}>
-            Subscribe
+            Membership
         </Typography>
           <Stack textAlign={'center'}>
             {/* BRONZE */}
