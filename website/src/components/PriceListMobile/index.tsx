@@ -86,7 +86,7 @@ export default function PriceListMobile(): JSX.Element {
                 </Box>
                 <Typography
                   color={'#c0c0c0'}>
-                  Bronze
+                  Silver
                 </Typography>
                 {/* SILVER PRICING */}
                 <Box

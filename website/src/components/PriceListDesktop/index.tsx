@@ -39,8 +39,7 @@ export default function PriceListDesktop(): JSX.Element {
   return (
     <Box
       className={'site-container'}
-      mt={'115px'}
-      mb={'55px'}>
+      mt={'115px'}>
       <Typography
           className={'site-section-title'}>
           Membership
