@@ -29,10 +29,7 @@ const config: Config = {
   },
 
   scripts: [
-    'https://www.googletagmanager.com/gtag/js?id=G-G17V0J27LX',
-    {
-      src: './google-analytics.ts'
-    }
+
   ],
 
   presets: [
