@@ -14,6 +14,13 @@ import PriceListTablet from '../components/PriceListTablet';
 import Faqs from '../components/Faqs';
 import Connect from '../components/Connect';
 import { MuiThemeWrapper } from '../components/MuiThemeWrapper.tsx';
+import Head from '@docusaurus/Head';
+
+const googleAnalytics = `
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments)}
+        gtag('js', new Date());
+        gtag('config', 'G-G17V0J27LX');`
 
 export default function Home(): JSX.Element {
   const isMobile = useMediaQuery({ maxWidth: 500 })
@@ -21,6 +28,12 @@ export default function Home(): JSX.Element {
 
   return (
     <Layout>
+      <Head>
+        <script async src="https://www.googletagmanager.com/gtag/js?id=G-G17V0J27LX"></script>
+        <script>
+          {googleAnalytics}
+        </script>
+      </Head>
       <MuiThemeWrapper>
         <main>
           <Box
