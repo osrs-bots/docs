@@ -28,6 +28,13 @@ const config: Config = {
     locales: ['en'],
   },
 
+  scripts: [
+    'https://www.googletagmanager.com/gtag/js?id=G-G17V0J27LX',
+    {
+      src: './google_analytics.ts'
+    }
+  ],
+
   presets: [
     [
       'classic',
