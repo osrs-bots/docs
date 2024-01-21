@@ -8,9 +8,8 @@ import Layout from '@theme/Layout';
 import About from '../components/About';
 import AppHero from '../components/AppHero';
 import Disclaimer from '../components/Disclaimer';
-import PriceListDesktop from '../components/PriceListDesktop';
-import PriceListMobile from '../components/PriceListMobile';
-import PriceListTablet from '../components/PriceListTablet';
+import PriceListMobile from '../components/PriceListSmall';
+import PriceListTablet from '../components/PriceListLarge';
 import Faqs from '../components/Faqs';
 import Connect from '../components/Connect';
 import { MuiThemeWrapper } from '../components/MuiThemeWrapper.tsx';
@@ -24,9 +23,7 @@ const googleAnalytics = `
         gtag('config', 'G-G17V0J27LX');`
 
 export default function Home(): JSX.Element {
-  const isMobile = useMediaQuery({ maxWidth: 500 })
-  const isTablet = useMediaQuery({ minWidth: 500, maxWidth: 1200 })
-
+  const isMobile = useMediaQuery({ maxWidth: 900 })
   return (
     <Layout>
       <Head>
@@ -47,12 +44,12 @@ export default function Home(): JSX.Element {
             {isMobile && 
               <PriceListMobile />
             }
-            {isTablet &&
+            {!isMobile &&
               <PriceListTablet/>
             }
-            {!isTablet && !isMobile &&
+            {/* {!isTablet && !isMobile &&
               <PriceListDesktop/>
-            }
+            } */}
             <Disclaimer/>
             <Faqs/>
             <Connect/>
