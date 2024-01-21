@@ -8,12 +8,7 @@ export default function Download(): JSX.Element {
   return (
     <Box
       className={'site-container'}
-      mt={'85px'}>
-        <Typography
-          id='about'
-          className={'site-section-title'}>
-          Download
-        </Typography>
+      mt={'35px'}>
         <Box width={'max-content'}>
           <Card>
             <CardContent>
