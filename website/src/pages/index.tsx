@@ -15,6 +15,7 @@ import Faqs from '../components/Faqs';
 import Connect from '../components/Connect';
 import { MuiThemeWrapper } from '../components/MuiThemeWrapper.tsx';
 import Head from '@docusaurus/Head';
+import Download from '../components/Download';
 
 const googleAnalytics = `
         window.dataLayer = window.dataLayer || [];
@@ -42,6 +43,7 @@ export default function Home(): JSX.Element {
           >
             <AppHero/>
             <About />
+            <Download />
             {isMobile && 
               <PriceListMobile />
             }
