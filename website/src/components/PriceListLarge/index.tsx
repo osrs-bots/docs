@@ -10,6 +10,7 @@ import {
 } from '@mui/material';
 import LockIcon from '@mui/icons-material/Lock';
 import { jsx } from '@emotion/react';
+import { MuiThemeWrapper } from '../MuiThemeWrapper.tsx';
 
 function ListPerks(list): JSX.Element[] {
   return list.map((perk) => {
@@ -29,79 +30,81 @@ function Perk({perk}): JSX.Element {
 
 const TierCard = ({ name, icon, price, features, hex }): JSX.Element => {
   return (
-    <Card sx={{
-      height: '100%'
-    }}>
-      <Stack
-        flexDirection={'column'}
-        display={'flex'}
-        p={'15px'}>
-        <Box>
-          <img src={icon}/>
-        </Box>
-        <Typography
-          color={hex}>
-          {name}
-        </Typography>
-        <Box>
-          <Typography component='div'>
-            {name === 'Bronze' &&
-              <>Free</>
-            }
-            {name === 'Silver' &&
-              <>Sign up</>
-            }
-            {name === 'Gold' &&
-              <>
-                <Box fontWeight={700} display='inline'>$2.99</Box> 
-                &nbsp;USD
-              </>
-            }
+    <MuiThemeWrapper>
+      <Card sx={{
+        height: '100%'
+      }}>
+        <Stack
+          flexDirection={'column'}
+          display={'flex'}
+          p={'15px'}>
+          <Box>
+            <img src={icon}/>
+          </Box>
+          <Typography
+            color={hex}>
+            {name}
           </Typography>
-          {/*  */}
-          <Stack>
-            {name === 'Bronze' &&
-              <Typography>
-                -------------------
-              </Typography>
+          <Box>
+            <Typography component='div'>
+              {name === 'Bronze' &&
+                <>Free</>
+              }
+              {name === 'Silver' &&
+                <>Sign up</>
+              }
+              {name === 'Gold' &&
+                <>
+                  <Box fontWeight={700} display='inline'>$2.99</Box> 
+                  &nbsp;USD
+                </>
+              }
+            </Typography>
+            {/*  */}
+            <Stack>
+              {name === 'Bronze' &&
+                <Typography>
+                  -------------------
+                </Typography>
+              }
+              {name === 'Silver' &&
+                <Typography>
+                  -------------------
+                </Typography>
+              }
+              {name === 'Gold' &&
+                <Typography>
+                  per key / month
+                </Typography>
+              }
+            </Stack>
+          </Box>
+        </Stack>
+        <CardActions 
+          sx={{
+            width: '100%'
+          }} >
+          <Box>
+            {name === 'Silver' && 
+              <Button 
+                disabled
+                variant='outlined'
+                endIcon={<LockIcon/>}>
+                Register
+              </Button>
             }
-            {name === 'Silver' &&
-              <Typography>
-                -------------------
-              </Typography>
+            {name === 'Gold' && 
+              <Button 
+                disabled
+                variant='outlined'
+                endIcon={<LockIcon/>}>
+                Coming Soon
+              </Button>
             }
-            {name === 'Gold' &&
-              <Typography>
-                per key / month
-              </Typography>
-            }
-          </Stack>
-        </Box>
-      </Stack>
-      <CardActions 
-        sx={{
-          width: '100%'
-        }} >
-        <Box>
-          {name === 'Silver' && 
-            <Button 
-              disabled
-              variant='outlined'
-              endIcon={<LockIcon/>}>
-              Register
-            </Button>
-          }
-          {name === 'Gold' && 
-            <Button 
-              disabled
-              variant='outlined'
-              endIcon={<LockIcon/>}>
-              Coming Soon
-            </Button>
-          }
-        </Box>
-      </CardActions>
-    </Card>
+          </Box>
+        </CardActions>
+      </Card>
+    </MuiThemeWrapper>
   )
 }
 

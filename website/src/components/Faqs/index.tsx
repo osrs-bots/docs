@@ -11,6 +11,7 @@ import {
   Stack
 } from '@mui/material';
 import { ExpandMore } from '@mui/icons-material'
+import { MuiThemeWrapper } from '../MuiThemeWrapper.tsx';
 
 const faqs = [
   {
@@ -87,23 +88,25 @@ const faqs = [
 export default function Faqs(): JSX.Element {
   const isMobile = useMediaQuery({ maxWidth: 500 })
   return (
-    <Box
-      className={'site-container'}
-      mt={'85px'}>
-        
-          {isMobile ? 
-            <Typography
-              className={'site-section-title'}>
-                FAQs
-            </Typography>
-          :
-            <Typography
-              className={'site-section-title'}>
-                Frequent Questions
-            </Typography>
-          }
-        <AccordionUsage/>
-    </Box>
+    <MuiThemeWrapper>
+      <Box
+        className={'site-container'}
+        mt={'85px'}>
+          
+            {isMobile ? 
+              <Typography
+                className={'site-section-title'}>
+                  FAQs
+              </Typography>
+            :
+              <Typography
+                className={'site-section-title'}>
+                  Frequent Questions
+              </Typography>
+            }
+          <AccordionUsage/>
+      </Box>
+    </MuiThemeWrapper>
   );
 }
 
