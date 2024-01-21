@@ -18,7 +18,7 @@ export default function AppHero(): JSX.Element {
         <Typography
           className='site-title'
           mt={'15px'}>
-          OSRS Bots 🪄
+         🏹🧙‍♂️⚔️ OSRS Bots ⚔️🧙‍♂️🏹
         </Typography>
         <Typography
           className='site-tag-line'
