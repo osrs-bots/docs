@@ -20,7 +20,7 @@ export default function Disclaimer(): JSX.Element {
           </Typography>
         }
         <Typography>
-          Using this software is at your own discretion and risk. Employing them may lead to a ban or loss of your old school runescape account. I cannot be held accountable for any misuse or consequences arising from the utilization of this code. This software shouldn't be used while playing on official Old School Runescape servers.
+          Using this software is at your own discretion and risk. Misuse of them may lead to a ban or loss of your old school runescape account. I cannot be held accountable for any misuse or consequences arising from the utilization of this code. This software shouldn't be used while playing on official Old School Runescape servers.
         </Typography>
     </Box>
   );
