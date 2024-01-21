@@ -1,6 +1,6 @@
 
 import React from 'react';
-import { PropTypes } from 'prop-types';
+import PropTypes  from 'prop-types';
 import {
   Box,
   Button,
@@ -79,32 +79,26 @@ const TierCard = ({ name, icon, price, features, hex }): JSX.Element => {
         </Box>
       </Stack>
       <CardActions 
-              sx={{
-                width: '100%'
-              }} >
+        sx={{
+          width: '100%'
+        }} >
         <Box>
-          {name === 'Bronze' && 
-            <Button
-              variant='outlined'>
-              Download
+          {name === 'Silver' && 
+            <Button 
+              disabled
+              variant='outlined'
+              endIcon={<LockIcon/>}>
+              Register
             </Button>
           }
-            {name === 'Silver' && 
-              <Button 
-                disabled
-                variant='outlined'
-                endIcon={<LockIcon/>}>
-                Register
-              </Button>
-            }
-            {name === 'Gold' && 
-              <Button 
-                disabled
-                variant='outlined'
-                endIcon={<LockIcon/>}>
-                Coming Soon
-              </Button>
-            }
+          {name === 'Gold' && 
+            <Button 
+              disabled
+              variant='outlined'
+              endIcon={<LockIcon/>}>
+              Coming Soon
+            </Button>
+          }
         </Box>
       </CardActions>
     </Card>
@@ -115,7 +109,7 @@ TierCard.propTypes = {
   name: PropTypes.string,
   icon: PropTypes.string,
   isLocked: PropTypes.bool,
-  features: PropTypes.arrayOf(PropTypes.Strings),
+  features: PropTypes.arrayOf(PropTypes.string),
   price: PropTypes.string,
   needsRegistration: PropTypes.bool,
   hex: PropTypes.string

@@ -64,13 +64,6 @@ export default function PriceListMobile(): JSX.Element {
                     FREE
                   </Typography>
                 </Box>
-                <Box
-                  mt={'10px'}
-                  mb={'5px'}>
-                  <Button variant='outlined'>
-                    Download
-                  </Button>
-                </Box>
               </Stack>
             </Card>
 
