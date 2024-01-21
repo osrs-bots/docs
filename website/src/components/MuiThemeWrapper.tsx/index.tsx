@@ -2,7 +2,11 @@ import React from 'react';
 import { ThemeProvider, createTheme } from '@mui/material/styles'
 import { useColorMode } from '@docusaurus/theme-common';
 
-const theme = createTheme({});
+const theme = createTheme({
+  palette: {
+    mode: 'light',
+  }
+});
 
 const darkTheme = createTheme({
   palette: {
