@@ -25,7 +25,7 @@ export default function About(): JSX.Element {
         Do you love playing Old School Runescape, but hate wasting time on boring and tedious tasks? Do you wish you could level up faster, make more gold, and enjoy the game more? If you answered yes, then you need osrs bots!
         </Typography>
         <Typography mt={'25px'}>
-            Unlike client based bots, pixel determinate bots are more stealthy and less likely to be detected by anti-cheat systems. To use this software, you need to install python and pip, and be able to run commands in the terminal.
+            Unlike client based bots, pixel determinate bots are more stealthy and less likely to be detected by anti-cheat software. To get started botting on Old School Runescape download the osrs-bots client below.
         </Typography>
     </Box>
   );
