@@ -110,7 +110,9 @@ export default function Faqs(): JSX.Element {
 function MapFaqs(): JSX.Element[] {
   return faqs.map(({question, answer}, i) => {
       return (
-          <Accordion elevation={3}>
+          <Accordion 
+            key={question}
+            elevation={3}>
             <AccordionSummary
               expandIcon={<ExpandMore />}
               aria-controls={`panel${i}-content`}

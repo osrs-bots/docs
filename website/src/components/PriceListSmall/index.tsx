@@ -41,9 +41,12 @@ export default function PriceListMobile(): JSX.Element {
             className={'site-section-title'}>
             Membership
         </Typography>
-          <Stack textAlign={'center'}>
+          <Stack 
+            textAlign={'center'}
+            width={'80%'}
+            ml={'10%'}>
             {/* BRONZE */}
-            <Card sx={{ marginBottom: '25px' }} elevation={3}>
+            <Card sx={{ marginBottom: '25px' }} >
               <Stack
                 p={'15px'}>
                 <Box>
@@ -57,27 +60,22 @@ export default function PriceListMobile(): JSX.Element {
                 <Box
                   mt={'10px'}
                   mb={'5px'}>
-                  <Typography fontWeight={700}>
+                  <Typography>
                     FREE
                   </Typography>
-                  <Typography>
-                      -------------
-                  </Typography>
                 </Box>
-                {/* BRONZE PERKS */}
-                <ListBronzePerks />
                 <Box
                   mt={'10px'}
                   mb={'5px'}>
                   <Button variant='outlined'>
-                    Get Started
+                    Download
                   </Button>
                 </Box>
               </Stack>
             </Card>
 
             {/* SILVER */}
-            <Card sx={{ marginBottom: '25px' }} elevation={3}>
+            <Card sx={{ marginBottom: '25px' }} >
               <Stack
                 mt={'25px'}
                 p={'15px'}>
@@ -92,15 +90,10 @@ export default function PriceListMobile(): JSX.Element {
                 <Box
                   mt={'10px'}
                   mb={'5px'}>
-                  <Typography fontWeight={700}>
-                    FREE
-                  </Typography>
                   <Typography>
                     Request Trial
                   </Typography>
                 </Box>
-                {/* SILVER PERKS */}
-                <ListSilverPerks />
                 <Box
                   mt={'10px'}
                   mb={'5px'}>
@@ -108,14 +101,14 @@ export default function PriceListMobile(): JSX.Element {
                     disabled 
                     variant='outlined' 
                     endIcon={<LockIcon/>}>
-                    Locked
+                    Register
                   </Button>
                 </Box>
               </Stack>
             </Card>
 
             {/* GOLD */}
-            <Card sx={{ marginBottom: '25px' }} elevation={3}>
+            <Card sx={{ marginBottom: '25px' }} >
               <Stack
                 mt={'25px'}
                 p={'15px'}>
@@ -137,8 +130,6 @@ export default function PriceListMobile(): JSX.Element {
                     Per key / month
                   </Typography>
                 </Box>
-                {/* GOLD PERKS */}
-                <ListGoldPerks />
                 <Box
                   mt={'10px'}
                   mb={'5px'}>
@@ -146,7 +137,7 @@ export default function PriceListMobile(): JSX.Element {
                     disabled 
                     variant='outlined' 
                       endIcon={<LockIcon/>}>
-                    Locked
+                    Coming Soon
                   </Button>
                 </Box>
               </Stack>

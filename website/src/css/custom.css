@@ -199,6 +199,10 @@ and (max-width : 500px) {
   .site-home-container {
     padding-top: 10%;
   }
+  .site-downloads-container {
+    width: 80% !important;
+    margin-left: 10%;
+  }
 }
 
 /* iPads (portrait) ----------- */

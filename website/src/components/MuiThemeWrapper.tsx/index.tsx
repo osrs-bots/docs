@@ -11,7 +11,7 @@ const darkTheme = createTheme({
 });
 
 export function MuiThemeWrapper({ children }) {
-  const { isDarkTheme } = useColorMode();
+  const isDarkTheme = useColorMode().colorMode === 'dark';
   return (
     <ThemeProvider theme={isDarkTheme ? darkTheme : theme}>
       {children}

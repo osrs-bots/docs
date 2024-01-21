@@ -4,7 +4,7 @@ import { useColorMode } from '@docusaurus/theme-common';
 import React from 'react';
 
 export default function Connect(): JSX.Element {
-  const { isDarkTheme } = useColorMode();
+  const isDarkTheme = useColorMode().colorMode === 'dark';
   const mode = isDarkTheme ? 'dark' : 'light'
   return (
     <Box

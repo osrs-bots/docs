@@ -1,31 +1,33 @@
-
-import useBaseUrl from '@docusaurus/useBaseUrl';
-import { Box, Button, Card, CardActions, CardContent, Paper, Stack, Typography } from '@mui/material';
 import React from 'react';
+import { Box, Button, Card, CardActions, CardContent, Stack, Typography } from '@mui/material';
+import { useMediaQuery } from 'react-responsive'
 
 export default function Download(): JSX.Element {
+  const isMobile = useMediaQuery({ maxWidth: 900 })
 
   return (
     <Box
       className={'site-container'}
       mt={'35px'}>
-        <Box width={'max-content'}>
+        <Box
+          className={'site-downloads-container'}
+          width={'max-content'}>
           <Card>
             <CardContent>
-            <Stack 
-              spacing={2} 
-              direction="row" 
-              alignItems="center">
-              <img
-                  className='connect-icon' 
-                  height='28px'
-                  width='28px'
-                  src={`img/icons/windows-color-theme.svg`}/>
-              <Typography 
-                noWrap>
-                  Windows 64-bit
-                </Typography>
-            </Stack>
+              <Stack
+                spacing={2} 
+                direction="row" 
+                alignItems="center">
+                <img
+                    className='connect-icon' 
+                    height='28px'
+                    width='28px'
+                    src={`img/icons/windows-color-theme.svg`}/>
+                <Typography 
+                  noWrap>
+                    Windows 10 64-bit
+                  </Typography>
+              </Stack>
             </CardContent>
               <Box textAlign={'center'}>
                 <CardActions>
