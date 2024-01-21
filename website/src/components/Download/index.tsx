@@ -12,7 +12,8 @@ export default function Download(): JSX.Element {
         <Box
           className={'site-downloads-container'}
           width={'max-content'}>
-          <Card>
+          <Card
+            id='download'>
             <CardContent>
               <Stack
                 spacing={2} 
