@@ -36,7 +36,7 @@ export default function Download(): JSX.Element {
                 <Box textAlign={'center'}>
                   <CardActions>
                       <Button
-                        href='https://github.com/osrs-bots/osrs-python-bot-runner/releases/download/0.1.0/osrs-bots-runner-Windows-amd64.exe'
+                        href='https://github.com/osrs-bots/osrs-python-bot-runner/releases/download/0.2.0/osrs-bots-runner-Windows-amd64.exe'
                         size="large" 
                         fullWidth>
                           Install
